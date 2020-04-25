@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Groupomania">
+    <link rel="stylesheet" href="css/groupomania.css">
+    <title> Groupomédia-Inscription </title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,600,700&display=swap" rel="stylesheet">
+
+    <script src="js/connexion.js"></script>
+
+</head>
+
+<body onload='clear()'>
+    <header>
+        <a id='logo' href='singin.html'> <img src="logos/icon-left-font-monochrome-black.svg" alt="logo Groupomania" /></a>
+        <nav>
+            <a href="login.html">Connexion</a>
+        </nav>
+    </header>
+
+    <main id="all">
+        <article id="form">
+            <h2>Bienvenue, inscrivez-vous sur le réseau social Groupomania!</h2>
+            <div class="pairs">
+                <p>
+                    <label for="lastName"> Nom: </label>
+                    <input type="text" name="lastName" id="lastName" />
+                </p>
+                <p>
+                    <label for="firstName"> Prénom: </label>
+                    <input type="text" name="firstName" id="firstName" />
+                </p>
+            </div>
+            <div class="pairs">
+                <p>
+                    <label for="departement"> Département: </label>
+                    <select name="departement" id="departement">
+                        <option value="none">---</option>
+                        <option value="Direction">Direction</option>
+                        <option value="Communication">Communication</option>
+                        <option value="Ressources humaines">Ressources Humaines</option>
+                        <option value="Ventes">Ventes</option>
+                        <option value="Logistique">Logistique</option>
+                        <option value="Comptabilité">Comptabilité</option>
+                        <option value="Achats">Achats</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="fonction"> Fonction: </label>
+                    <input type="text" name="fonction" id="fonction" />
+                </p>
+            </div>
+            <div class="pairs">
+                <p>
+                    <label for="email"> Email: </label>
+                    <input type="email" name="email" id="email" />
+                </p>
+                <p>
+                    <label for="password"> Mot de passe: </label>
+                    <input type="password" name="password" id="password" />
+                </p>
+            </div>
+            <button id="send" onclick="singin()" />S'inscrire</button>
+            <p>Déjà inscrit? <br><a href="login.html">Connectez-vous!</a></p>
+        </article>
+    </main>
+    <footer>
+        <a href="mentions.html">Mentions légales</a>
+    </footer>
+</body>
+
+
+</html>

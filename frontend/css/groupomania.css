@@ -1,0 +1,287 @@
+body {
+    font-size: 20px;
+    font-family: "Baloo 2";
+    margin: 0;
+    background: rgb(251, 229, 192, 0.4);
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#msgMain {
+    padding-top: 50px;
+}
+
+header img {
+    width: 80%;
+}
+
+img {
+    width: 50%;
+}
+
+textarea {
+    font-size: 15px;
+    font-family: "Baloo 2";
+}
+
+#form {
+    margin: auto;
+    width: 90%;
+}
+
+#form p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+}
+
+#options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+input,
+select {
+    font-size: 20px;
+    width: 30%;
+    align-items: center;
+    margin: auto;
+}
+
+header,
+footer {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(251, 229, 192);
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    margin-left: 60px;
+}
+
+#addImg {
+    display: flex;
+    flex-direction: column;
+}
+
+#comments {
+    margin-bottom: 20px;
+}
+
+#options a:hover,
+header a:hover,
+footer a:hover {
+    color: #936D58;
+    font-weight: bold;
+}
+
+.send,
+#send {
+    font-size: 25px;
+    width: auto;
+    margin: auto;
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin: 20px;
+    background-color: #936D58;
+    color: white;
+}
+
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+#window input,
+.pairs input,
+.pairs select {
+    width: 100%;
+    ;
+}
+
+#newComContent {
+    margin-bottom: 20px;
+}
+
+#messages,
+.pairs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#messages div {
+    width: 25%;
+    margin: 15px;
+    padding: 0;
+}
+
+#com {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.like {
+    width: auto;
+    background-color: rgb(251, 229, 192, 0.1);
+}
+
+.like:hover {
+    color: white;
+}
+
+#message {
+    margin-bottom: 20px;
+}
+
+h5 {
+    margin: 0;
+    margin-top: 16px;
+}
+
+p a {
+    color: #936D58;
+    font-size: 30px;
+}
+
+#messages div:hover {
+    background-color: #936D58;
+}
+
+#messages a:hover {
+    color: white
+}
+
+.pairs {
+    margin: 50px;
+}
+
+section h2 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 23px;
+    margin: 0, 20px;
+}
+
+#imgLogo {
+    margin-left: 50px;
+    width: 50%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.msg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg {
+    width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 0;
+        align-items: center;
+    }
+    main {
+        padding: 0 20px 50px;
+    }
+    nav {
+        width: 100%;
+        background-color: #936D58;
+        margin-top: 10px;
+        margin-right: 0;
+        padding: 10px 0;
+    }
+    #logo {
+        margin-left: 0;
+        display: flex;
+        padding-bottom: 20px;
+    }
+    header img {
+        margin: auto;
+        justify-content: center;
+    }
+    nav a {
+        color: white
+    }
+    input,
+    select {
+        width: 40%;
+    }
+    textarea {
+        width: 80%;
+    }
+    #messages div {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    #addTitle {
+        display: flex;
+        flex-direction: column;
+    }
+    #msg {
+        width: 80%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        padding: 3px 0;
+    }
+    input,
+    select {
+        width: 70%;
+    }
+    #messages div {
+        width: 80%;
+    }
+    #msgMain {
+        padding: 30px 0 60px;
+    }
+}

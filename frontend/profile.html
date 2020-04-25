@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Groupomania">
+    <link rel="stylesheet" href="css/groupomania.css">
+    <title> Groupomédia-Profil </title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,600,700&display=swap" rel="stylesheet">
+
+    <script src="js/profile.js"></script>
+
+</head>
+
+<body onload='profile()'>
+    <header>
+        <a id='logo' href='index.html'> <img src="logos/icon-left-font-monochrome-black.svg" alt="logo Groupomania" /></a>
+        <nav>
+            <a href='index.html'> Posts récents </a>
+            <a href='login.html'>Déconnexion</a>
+        </nav>
+    </header>
+
+    <main id="all">
+        <article id="form">
+            <h2> Modifiez votre profil: </h2>
+            <div class="pairs">
+                <h3 id="username">
+                </h3>
+                <h3 id="email">
+                </h3>
+            </div>
+            <div class="pairs">
+                <p>
+                    <label for="departement"> Département: </label>
+                    <select name="departement" id="departement">
+                            <option value="none" id='oldDept'></option>
+                            <option value="Direction" class='option'>Direction</option>
+                            <option value="Communication" class='option'>Communication</option>
+                            <option value="Ressources humaines" class='option'>Ressources Humaines</option>
+                            <option value="Ventes" class='option'>Ventes</option>
+                            <option value="Logistique" class='option'>Logistique</option>
+                            <option value="Comptabilité" class='option'>Comptabilité</option>
+                            <option value="Achats" class='option'>Achats</option>
+                        </select>
+                </p>
+                <p>
+                    <label for="fonction"> Fonction: </label>
+                    <input type="text" name="fonction" id="fonction" />
+                </p>
+            </div>
+            <div id='buttons'>
+                <button id="send" onclick="update()" />Mettre à jour</button>
+                <button id="send" onclick="deleteUser()" />Supprimer</button>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <a href="mentions.html">Mentions légales</a>
+    </footer>
+</body>
+
+
+</html>

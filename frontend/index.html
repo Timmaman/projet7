@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Groupomania">
+    <link rel="stylesheet" href="css/groupomania.css">
+    <title> Groupomédia-Index </title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,600,700&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a id='logo' href='index.html'> <img src="logos/icon-left-font-monochrome-black.svg" alt="logo Groupomania" /></a>
+        <nav>
+            <a href='profile.html'>Éditer mon profil</a>
+            <a onclick='disconnect()'>Déconnexion</a>
+        </nav>
+    </header>
+
+    <main id="all ">
+        <article id="post ">
+            <h2>Poster un message:</h2>
+            <h3 id='addTitle'>
+                <label for="title"> Titre:</label>
+                <input type="text " name="title" id="title" /><br>
+            </h3>
+            <p>
+                <textarea name="content" id="content" rows="5" cols="120 "></textarea>
+            </p>
+            <h3 id='addImg'>
+                <label for="img"> Image: </label>
+                <input type='file' id='img' />
+            </h3>
+            <button id="send" onclick="postMessage()">Publier</button>
+        </article>
+        <section>
+            <h2>Derniers messages publiés:</h2>
+            <article id="messages"></article>
+        </section>
+    </main>
+    <footer>
+        <a href="mentions.html ">Mentions légales</a>
+    </footer>
+</body>
+
+
+</html>

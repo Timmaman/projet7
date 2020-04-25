@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Groupomania">
+    <link rel="stylesheet" href="css/groupomania.css">
+    <title> Groupomédia-Connexion </title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,600,700&display=swap" rel="stylesheet">
+
+    <script src="js/connexion.js"></script>
+
+</head>
+
+<body onload='clear()'>
+    <header>
+        <a id='logo' href='singin.html'> <img src="logos/icon-left-font-monochrome-black.svg" alt="logo Groupomania" /></a>
+        <nav>
+            <a href="singin.html">Inscription</a>
+        </nav>
+    </header>
+
+    <main id="all">
+        <article id="form">
+            <h2>Bienvenue, connectez-vous sur le réseau social Groupomania!</h2>
+            <p>
+                <label for="email"> Email: </label>
+                <input type="email" name="email" id="email" />
+            </p>
+            <p>
+                <label for="password"> Password: </label>
+                <input type="password" name="password" id="password" />
+            </p>
+            <button id="send" onclick="login()" />Se connecter</button>
+            <p>Pas encore inscrit?<br> <a href="singin.html">Inscrivez-vous!</a></p>
+        </article>
+    </main>
+    <footer>
+        <a href="mentions.html">Mentions légales</a>
+    </footer>
+
+</body>
+
+
+</html>
